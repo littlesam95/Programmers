@@ -51,7 +51,7 @@ int solution(string str1, string str2) {
 	else {
 		sort(str_vec1.begin(), str_vec1.end());
 		sort(str_vec2.begin(), str_vec2.end());
-		// êµì§‘í•©
+		// ±³ÁıÇÕ
 		vector<string> intersect_vec;
 		int arr[1000] = { 0, };
 		for (int i = 0; i < str_vec1.size(); i++) {
@@ -63,7 +63,7 @@ int solution(string str1, string str2) {
 				}
 			}
 		}
-		// Ã‡Ã•ÃÃ½Ã‡Ã•
+		// ÇÕÁıÇÕ
 		int diff_str1 = str_vec1.size() - intersect_vec.size();
 		int diff_str2 = str_vec2.size() - intersect_vec.size();
 		int union_set = str_vec1.size() + str_vec2.size() - intersect_vec.size();
